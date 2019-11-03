@@ -42,16 +42,6 @@ WebAssembly enables near-native performance for games and apps
 - LLVM can be used as a compiler framework, where you provide the "front end" (parser and lexer) and the "back end" (code that converts LLVM's representation to actual machine code).
 - LLVM can also act as a JIT compiler - it has support for x86/x86_64 and PPC/PPC64 assembly generation with fast code optimizations aimed for compilation speed.
 
-## WebAssembly key concepts
-### Module:
-Represents a WebAssembly binary that has been compiled by the browser into executable machine code. A Module is stateless and thus, like a Blob, can be explicitly shared between windows and workers (via postMessage()). A Module declares imports and exports just like an ES2015module.
-### Memory:
-A resizable ArrayBuffer that contains the linear array of bytes read and written by WebAssembly’s low-level memory access instructions.
-### Table:
-A resizable typed array of references (e.g. to functions) that could not otherwise be stored as raw bytes in Memory (for safety and portability reasons).
-### Instance:
-A Module paired with all the state it uses at runtime including a Memory, Table, and set of imported values. An Instance is like an ES2015 module that has been loaded into a particular global with a particular set of imports.
-
 ## Interesting articles/resources:
 * https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts
 * https://webassembly.org/getting-started/js-api/
@@ -59,3 +49,6 @@ A Module paired with all the state it uses at runtime including a Memory, Table,
 * https://blog.mozilla.org/blog/2017/03/07/lots-new-in-firefox-game-changing-webassembly-support/
 * https://www.webassemblyman.com/webassembly_front_end_web_development.html
 * https://kripken.github.io/talks/wasm.html#/
+
+## Evangelism:
+https://github.com/gurumukhi/webassembly-cheatsheet/tree/master/evangelism
