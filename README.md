@@ -24,6 +24,7 @@ WebAssembly enables near-native performance for games and apps
 
 ## Keywords related to WebAssembly
 ### asmjs
+* Mozilla's experimental technology, first attempt to include other languages to the web!
 * asm.js is a subset of JavaScript designed to allow computer software written in languages such as C to be run as web applications.
 * asm.js can be bundled inside the main JS file, while as mentioned earlier WebAssembly is a binary file on the side, so you will have more than one file to distribute.
 * For older browsers where WASM is not supported yet, WASM can be compiled into asm.js by JavaScript polyfill.
